@@ -1,0 +1,16 @@
+parcel_id,customer_id,destination_node,weight_kg,deadline_min,priority,value,description
+PKG-0001,CUST-0061,6,3,298,1,36,Tier-1 Delivery to Node 6
+PKG-0002,CUST-0072,7,3,178,2,89,Tier-2 Delivery to Node 7
+PKG-0003,CUST-0053,5,8,193,2,81,Tier-2 Delivery to Node 5
+PKG-0004,CUST-0054,5,8,170,2,79,Tier-2 Delivery to Node 5
+PKG-0005,CUST-0015,1,2,276,1,31,Tier-1 Delivery to Node 1
+PKG-0006,CUST-0056,5,8,212,1,45,Tier-1 Delivery to Node 5
+PKG-0007,CUST-0050,5,6,193,2,75,Tier-2 Delivery to Node 5
+PKG-0008,CUST-0011,1,10,195,1,40,Tier-1 Delivery to Node 1
+PKG-0009,CUST-0072,7,3,97,3,153,Tier-3 Delivery to Node 7
+PKG-0010,CUST-0053,5,2,134,3,134,Tier-3 Delivery to Node 5
+PKG-0011,CUST-0054,5,8,345,1,29,Tier-1 Delivery to Node 5
+PKG-0012,CUST-0065,6,8,222,1,35,Tier-1 Delivery to Node 6
+PKG-0013,CUST-0076,7,6,66,3,159,Tier-3 Delivery to Node 7
+PKG-0014,CUST-0020,2,10,198,1,38,Tier-1 Delivery to Node 2
+PKG-0015,CUST-0071,7,6,291,1,26,Tier-1 Delivery to Node 7

@@ -1,0 +1,432 @@
+{
+  "num_nodes": 25,
+  "nodes": [
+    {
+      "node_id": 0,
+      "name": "Central Depot",
+      "x": 25.0,
+      "y": 25.0,
+      "is_depot": true
+    },
+    {
+      "node_id": 1,
+      "name": "Delivery Hub/Customer Zone 1",
+      "x": 28.73,
+      "y": 10.96,
+      "is_depot": false
+    },
+    {
+      "node_id": 2,
+      "name": "Delivery Hub/Customer Zone 2",
+      "x": 46.4,
+      "y": 44.5,
+      "is_depot": false
+    },
+    {
+      "node_id": 3,
+      "name": "Delivery Hub/Customer Zone 3",
+      "x": 23.49,
+      "y": 32.52,
+      "is_depot": false
+    },
+    {
+      "node_id": 4,
+      "name": "Delivery Hub/Customer Zone 4",
+      "x": 11.87,
+      "y": 12.2,
+      "is_depot": false
+    },
+    {
+      "node_id": 5,
+      "name": "Delivery Hub/Customer Zone 5",
+      "x": 15.27,
+      "y": 33.85,
+      "is_depot": false
+    },
+    {
+      "node_id": 6,
+      "name": "Delivery Hub/Customer Zone 6",
+      "x": 11.77,
+      "y": 46.67,
+      "is_depot": false
+    },
+    {
+      "node_id": 7,
+      "name": "Delivery Hub/Customer Zone 7",
+      "x": 5.24,
+      "y": 10.89,
+      "is_depot": false
+    },
+    {
+      "node_id": 8,
+      "name": "Delivery Hub/Customer Zone 8",
+      "x": 6.09,
+      "y": 37.42,
+      "is_depot": false
+    },
+    {
+      "node_id": 9,
+      "name": "Delivery Hub/Customer Zone 9",
+      "x": 18.86,
+      "y": 23.7,
+      "is_depot": false
+    },
+    {
+      "node_id": 10,
+      "name": "Delivery Hub/Customer Zone 10",
+      "x": 17.0,
+      "y": 31.32,
+      "is_depot": false
+    },
+    {
+      "node_id": 11,
+      "name": "Delivery Hub/Customer Zone 11",
+      "x": 20.58,
+      "y": 11.58,
+      "is_depot": false
+    },
+    {
+      "node_id": 12,
+      "name": "Delivery Hub/Customer Zone 12",
+      "x": 21.79,
+      "y": 16.0,
+      "is_depot": false
+    },
+    {
+      "node_id": 13,
+      "name": "Delivery Hub/Customer Zone 13",
+      "x": 7.1,
+      "y": 39.88,
+      "is_depot": false
+    },
+    {
+      "node_id": 14,
+      "name": "Delivery Hub/Customer Zone 14",
+      "x": 33.29,
+      "y": 32.58,
+      "is_depot": false
+    },
+    {
+      "node_id": 15,
+      "name": "Delivery Hub/Customer Zone 15",
+      "x": 42.59,
+      "y": 20.15,
+      "is_depot": false
+    },
+    {
+      "node_id": 16,
+      "name": "Delivery Hub/Customer Zone 16",
+      "x": 19.45,
+      "y": 21.46,
+      "is_depot": false
+    },
+    {
+      "node_id": 17,
+      "name": "Delivery Hub/Customer Zone 17",
+      "x": 20.61,
+      "y": 32.77,
+      "is_depot": false
+    },
+    {
+      "node_id": 18,
+      "name": "Delivery Hub/Customer Zone 18",
+      "x": 2.3,
+      "y": 23.35,
+      "is_depot": false
+    },
+    {
+      "node_id": 19,
+      "name": "Delivery Hub/Customer Zone 19",
+      "x": 26.61,
+      "y": 17.89,
+      "is_depot": false
+    },
+    {
+      "node_id": 20,
+      "name": "Delivery Hub/Customer Zone 20",
+      "x": 3.01,
+      "y": 34.41,
+      "is_depot": false
+    },
+    {
+      "node_id": 21,
+      "name": "Delivery Hub/Customer Zone 21",
+      "x": 2.43,
+      "y": 27.96,
+      "is_depot": false
+    },
+    {
+      "node_id": 22,
+      "name": "Delivery Hub/Customer Zone 22",
+      "x": 9.05,
+      "y": 3.59,
+      "is_depot": false
+    },
+    {
+      "node_id": 23,
+      "name": "Delivery Hub/Customer Zone 23",
+      "x": 10.32,
+      "y": 5.02,
+      "is_depot": false
+    },
+    {
+      "node_id": 24,
+      "name": "Delivery Hub/Customer Zone 24",
+      "x": 8.93,
+      "y": 33.5,
+      "is_depot": false
+    }
+  ],
+  "edges": [
+    {
+      "u": 0,
+      "v": 9,
+      "weight": 7.5
+    },
+    {
+      "u": 0,
+      "v": 3,
+      "weight": 8.53
+    },
+    {
+      "u": 0,
+      "v": 12,
+      "weight": 12.32
+    },
+    {
+      "u": 0,
+      "v": 16,
+      "weight": 7.81
+    },
+    {
+      "u": 0,
+      "v": 24,
+      "weight": 20.36
+    },
+    {
+      "u": 1,
+      "v": 19,
+      "weight": 8.88
+    },
+    {
+      "u": 1,
+      "v": 9,
+      "weight": 20.7
+    },
+    {
+      "u": 1,
+      "v": 12,
+      "weight": 9.25
+    },
+    {
+      "u": 2,
+      "v": 14,
+      "weight": 19.24
+    },
+    {
+      "u": 3,
+      "v": 17,
+      "weight": 3.54
+    },
+    {
+      "u": 3,
+      "v": 14,
+      "weight": 11.84
+    },
+    {
+      "u": 3,
+      "v": 5,
+      "weight": 10.1
+    },
+    {
+      "u": 3,
+      "v": 8,
+      "weight": 21.84
+    },
+    {
+      "u": 3,
+      "v": 16,
+      "weight": 13.17
+    },
+    {
+      "u": 4,
+      "v": 11,
+      "weight": 9.38
+    },
+    {
+      "u": 4,
+      "v": 7,
+      "weight": 8.05
+    },
+    {
+      "u": 4,
+      "v": 23,
+      "weight": 8.85
+    },
+    {
+      "u": 4,
+      "v": 22,
+      "weight": 10.01
+    },
+    {
+      "u": 5,
+      "v": 10,
+      "weight": 3.64
+    },
+    {
+      "u": 5,
+      "v": 24,
+      "weight": 6.67
+    },
+    {
+      "u": 5,
+      "v": 6,
+      "weight": 14.45
+    },
+    {
+      "u": 5,
+      "v": 8,
+      "weight": 11.19
+    },
+    {
+      "u": 5,
+      "v": 20,
+      "weight": 14.56
+    },
+    {
+      "u": 6,
+      "v": 13,
+      "weight": 10.04
+    },
+    {
+      "u": 6,
+      "v": 17,
+      "weight": 19.09
+    },
+    {
+      "u": 7,
+      "v": 9,
+      "weight": 19.86
+    },
+    {
+      "u": 8,
+      "v": 24,
+      "weight": 5.16
+    },
+    {
+      "u": 8,
+      "v": 13,
+      "weight": 2.81
+    },
+    {
+      "u": 8,
+      "v": 20,
+      "weight": 4.82
+    },
+    {
+      "u": 8,
+      "v": 21,
+      "weight": 11.69
+    },
+    {
+      "u": 9,
+      "v": 16,
+      "weight": 2.6
+    },
+    {
+      "u": 9,
+      "v": 14,
+      "weight": 20.96
+    },
+    {
+      "u": 9,
+      "v": 18,
+      "weight": 20.26
+    },
+    {
+      "u": 10,
+      "v": 17,
+      "weight": 4.62
+    },
+    {
+      "u": 10,
+      "v": 16,
+      "weight": 12.48
+    },
+    {
+      "u": 10,
+      "v": 20,
+      "weight": 15.82
+    },
+    {
+      "u": 10,
+      "v": 24,
+      "weight": 9.26
+    },
+    {
+      "u": 11,
+      "v": 12,
+      "weight": 5.25
+    },
+    {
+      "u": 11,
+      "v": 16,
+      "weight": 10.83
+    },
+    {
+      "u": 12,
+      "v": 16,
+      "weight": 7.01
+    },
+    {
+      "u": 12,
+      "v": 19,
+      "weight": 5.95
+    },
+    {
+      "u": 12,
+      "v": 23,
+      "weight": 17.42
+    },
+    {
+      "u": 13,
+      "v": 24,
+      "weight": 7.95
+    },
+    {
+      "u": 14,
+      "v": 15,
+      "weight": 16.74
+    },
+    {
+      "u": 16,
+      "v": 19,
+      "weight": 8.62
+    },
+    {
+      "u": 16,
+      "v": 21,
+      "weight": 21.91
+    },
+    {
+      "u": 17,
+      "v": 24,
+      "weight": 12.46
+    },
+    {
+      "u": 18,
+      "v": 21,
+      "weight": 5.65
+    },
+    {
+      "u": 20,
+      "v": 21,
+      "weight": 8.03
+    },
+    {
+      "u": 22,
+      "v": 23,
+      "weight": 2.32
+    }
+  ]
+}

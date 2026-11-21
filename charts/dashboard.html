@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courier Logistics Optimization Dashboard</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { margin: 0 0 8px 0; font-size: 28px; color: #60a5fa; }
+    p.subtitle { margin: 0; color: var(--text-muted); font-size: 14px; }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .kpi-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .kpi-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+    .kpi-value { font-size: 26px; font-weight: bold; margin: 8px 0; color: #38bdf8; }
+    .kpi-sub { font-size: 11px; color: var(--text-muted); }
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    h2 { font-size: 18px; margin-top: 0; margin-bottom: 16px; color: #93c5fd; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th { background: #0f172a; color: var(--text-muted); font-weight: 600; }
+    tr:hover { background: #334155; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .badge-p1 { background: #334155; color: #94a3b8; }
+    .badge-p2 { background: #1e3a8a; color: #60a5fa; }
+    .badge-p3 { background: #78350f; color: #f59e0b; }
+    .badge-p4 { background: #7f1d1d; color: #f87171; }
+    .route-step {
+      display: inline-block;
+      background: #1e3a8a;
+      color: #93c5fd;
+      padding: 4px 10px;
+      border-radius: 16px;
+      margin: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .route-arrow { color: var(--success); font-weight: bold; margin: 0 4px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚚 Integrated Courier Logistics Optimization Engine</h1>
+      <p class="subtitle">Capstone Project: Sorting + 0/1 Knapsack DP + Dijkstra Shortest Path + TSP Route Maker</p>
+    </header>
+
+    <!-- KPI Metric Cards -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-title">Parcels Selected / Total</div>
+        <div class="kpi-value">34 / 100</div>
+        <div class="kpi-sub">Value: 5088 (out of 8882)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Vehicle Capacity Utilized</div>
+        <div class="kpi-value">100.0%</div>
+        <div class="kpi-sub">120 kg of 120 kg limit</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Optimal Route Length</div>
+        <div class="kpi-value">293.23 km</div>
+        <div class="kpi-sub">21 delivery stops + return to depot</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-title">Total Optimization Runtime</div>
+        <div class="kpi-value">1.71 ms</div>
+        <div class="kpi-sub">Sort: 0.34ms | DP: 0.59ms | Dijkstra: 0.51ms</div>
+      </div>
+    </div>
+
+    <!-- Phase 2: Packing Manifest -->
+    <div class="section-card">
+      <h2>📦 Phase 2: Optimal Box Filling Manifest (0/1 Knapsack DP)</h2>
+      <p style="color:var(--text-muted); font-size:13px; margin-bottom:12px;">
+        Selected <strong>34</strong> parcels maximizing utility value (5088 pts) within 120 kg capacity.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Parcel ID</th>
+            <th>Customer</th>
+            <th>Dest Node</th>
+            <th>Weight (kg)</th>
+            <th>Deadline</th>
+            <th>Priority</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>PKG-0037</strong></td>
+            <td>CUST-0072</td>
+            <td>Node 7</td>
+            <td>1 kg</td>
+            <td>35 mins</td>
+            <td><span class="badge badge-p4">Critical</span></td>
+            <td><strong>255</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0034</strong></td>
+            <td>CUST-0116</td>
+            <td>Node 11</td>
+            <td>5 kg</td>
+            <td>38 mins</td>
+            <td><span class="badge badge-p4">Critical</span></td>
+            <td><strong>263</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0030</strong></td>
+            <td>CUST-0212</td>
+            <td>Node 21</td>
+            <td>1 kg</td>
+            <td>60 mins</td>
+            <td><span class="badge badge-p4">Critical</span></td>
+            <td><strong>244</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0038</strong></td>
+            <td>CUST-0013</td>
+            <td>Node 1</td>
+            <td>3 kg</td>
+            <td>62 mins</td>
+            <td><span class="badge badge-p4">Critical</span></td>
+            <td><strong>248</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0048</strong></td>
+            <td>CUST-0156</td>
+            <td>Node 15</td>
+            <td>4 kg</td>
+            <td>62 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>165</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0041</strong></td>
+            <td>CUST-0236</td>
+            <td>Node 23</td>
+            <td>2 kg</td>
+            <td>75 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>157</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0035</strong></td>
+            <td>CUST-0150</td>
+            <td>Node 15</td>
+            <td>4 kg</td>
+            <td>77 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>151</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0093</strong></td>
+            <td>CUST-0162</td>
+            <td>Node 16</td>
+            <td>5 kg</td>
+            <td>83 mins</td>
+            <td><span class="badge badge-p4">Critical</span></td>
+            <td><strong>225</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0031</strong></td>
+            <td>CUST-0093</td>
+            <td>Node 9</td>
+            <td>3 kg</td>
+            <td>83 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>146</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0066</strong></td>
+            <td>CUST-0113</td>
+            <td>Node 11</td>
+            <td>5 kg</td>
+            <td>84 mins</td>
+            <td><span class="badge badge-p4">Critical</span></td>
+            <td><strong>229</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0057</strong></td>
+            <td>CUST-0151</td>
+            <td>Node 15</td>
+            <td>5 kg</td>
+            <td>88 mins</td>
+            <td><span class="badge badge-p4">Critical</span></td>
+            <td><strong>237</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0087</strong></td>
+            <td>CUST-0113</td>
+            <td>Node 11</td>
+            <td>5 kg</td>
+            <td>89 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>159</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0017</strong></td>
+            <td>CUST-0173</td>
+            <td>Node 17</td>
+            <td>7 kg</td>
+            <td>92 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>158</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0044</strong></td>
+            <td>CUST-0092</td>
+            <td>Node 9</td>
+            <td>6 kg</td>
+            <td>93 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>159</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0097</strong></td>
+            <td>CUST-0046</td>
+            <td>Node 4</td>
+            <td>1 kg</td>
+            <td>94 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>158</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0070</strong></td>
+            <td>CUST-0180</td>
+            <td>Node 18</td>
+            <td>6 kg</td>
+            <td>94 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>154</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0053</strong></td>
+            <td>CUST-0214</td>
+            <td>Node 21</td>
+            <td>4 kg</td>
+            <td>96 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>147</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0095</strong></td>
+            <td>CUST-0194</td>
+            <td>Node 19</td>
+            <td>3 kg</td>
+            <td>107 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>142</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0042</strong></td>
+            <td>CUST-0030</td>
+            <td>Node 3</td>
+            <td>3 kg</td>
+            <td>110 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>146</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0013</strong></td>
+            <td>CUST-0176</td>
+            <td>Node 17</td>
+            <td>4 kg</td>
+            <td>110 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>146</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0099</strong></td>
+            <td>CUST-0031</td>
+            <td>Node 3</td>
+            <td>5 kg</td>
+            <td>121 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>143</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0006</strong></td>
+            <td>CUST-0086</td>
+            <td>Node 8</td>
+            <td>3 kg</td>
+            <td>122 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>146</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0068</strong></td>
+            <td>CUST-0235</td>
+            <td>Node 23</td>
+            <td>1 kg</td>
+            <td>123 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>145</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0092</strong></td>
+            <td>CUST-0131</td>
+            <td>Node 13</td>
+            <td>3 kg</td>
+            <td>123 mins</td>
+            <td><span class="badge badge-p2">Medium</span></td>
+            <td><strong>95</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0008</strong></td>
+            <td>CUST-0131</td>
+            <td>Node 13</td>
+            <td>4 kg</td>
+            <td>125 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>146</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0091</strong></td>
+            <td>CUST-0160</td>
+            <td>Node 16</td>
+            <td>4 kg</td>
+            <td>126 mins</td>
+            <td><span class="badge badge-p3">High</span></td>
+            <td><strong>146</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0032</strong></td>
+            <td>CUST-0224</td>
+            <td>Node 22</td>
+            <td>4 kg</td>
+            <td>137 mins</td>
+            <td><span class="badge badge-p2">Medium</span></td>
+            <td><strong>96</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0088</strong></td>
+            <td>CUST-0224</td>
+            <td>Node 22</td>
+            <td>4 kg</td>
+            <td>146 mins</td>
+            <td><span class="badge badge-p2">Medium</span></td>
+            <td><strong>87</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0007</strong></td>
+            <td>CUST-0220</td>
+            <td>Node 22</td>
+            <td>3 kg</td>
+            <td>151 mins</td>
+            <td><span class="badge badge-p2">Medium</span></td>
+            <td><strong>80</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0074</strong></td>
+            <td>CUST-0124</td>
+            <td>Node 12</td>
+            <td>4 kg</td>
+            <td>156 mins</td>
+            <td><span class="badge badge-p2">Medium</span></td>
+            <td><strong>89</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0062</strong></td>
+            <td>CUST-0246</td>
+            <td>Node 24</td>
+            <td>3 kg</td>
+            <td>183 mins</td>
+            <td><span class="badge badge-p2">Medium</span></td>
+            <td><strong>85</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0079</strong></td>
+            <td>CUST-0062</td>
+            <td>Node 6</td>
+            <td>3 kg</td>
+            <td>198 mins</td>
+            <td><span class="badge badge-p2">Medium</span></td>
+            <td><strong>74</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0022</strong></td>
+            <td>CUST-0051</td>
+            <td>Node 5</td>
+            <td>1 kg</td>
+            <td>286 mins</td>
+            <td><span class="badge badge-p1">Low</span></td>
+            <td><strong>33</strong></td>
+          </tr>
+          <tr>
+            <td><strong>PKG-0069</strong></td>
+            <td>CUST-0026</td>
+            <td>Node 2</td>
+            <td>1 kg</td>
+            <td>302 mins</td>
+            <td><span class="badge badge-p1">Low</span></td>
+            <td><strong>34</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Phase 3: Route Plan -->
+    <div class="section-card">
+      <h2>🗺️ Phase 3: Final Delivery Route Sequence (TSP + Dijkstra)</h2>
+      <p style="color:var(--text-muted); font-size:13px; margin-bottom:12px;">
+        Tour Path: <span class="route-step">Depot (0)</span> <span class="route-arrow">➔</span> <span class="route-step">Node 11</span> <span class="route-arrow">➔</span> <span class="route-step">Node 4</span> <span class="route-arrow">➔</span> <span class="route-step">Node 7</span> <span class="route-arrow">➔</span> <span class="route-step">Node 22</span> <span class="route-arrow">➔</span> <span class="route-step">Node 23</span> <span class="route-arrow">➔</span> <span class="route-step">Node 12</span> <span class="route-arrow">➔</span> <span class="route-step">Node 1</span> <span class="route-arrow">➔</span> <span class="route-step">Node 19</span> <span class="route-arrow">➔</span> <span class="route-step">Node 16</span> <span class="route-arrow">➔</span> <span class="route-step">Node 9</span> <span class="route-arrow">➔</span> <span class="route-step">Node 18</span> <span class="route-arrow">➔</span> <span class="route-step">Node 21</span> <span class="route-arrow">➔</span> <span class="route-step">Node 8</span> <span class="route-arrow">➔</span> <span class="route-step">Node 13</span> <span class="route-arrow">➔</span> <span class="route-step">Node 6</span> <span class="route-arrow">➔</span> <span class="route-step">Node 24</span> <span class="route-arrow">➔</span> <span class="route-step">Node 5</span> <span class="route-arrow">➔</span> <span class="route-step">Node 17</span> <span class="route-arrow">➔</span> <span class="route-step">Node 3</span> <span class="route-arrow">➔</span> <span class="route-step">Node 15</span> <span class="route-arrow">➔</span> <span class="route-step">Node 2</span> <span class="route-arrow">➔</span> <span class="route-step">Depot (0)</span>
+      </p>
+      <p style="color:var(--text-muted); font-size:13px;">
+        Total Travel Distance: <strong>293.23 km</strong> | 2-Opt Refinement Improvement: <strong>9.28%</strong>
+      </p>
+    </div>
+
+    <!-- Phase 4: Runtime Performance Breakdown -->
+    <div class="section-card">
+      <h2>⚡ Phase 4: Algorithmic Runtime Performance Breakdown</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Phase / Algorithm</th>
+            <th>Complexity</th>
+            <th>Measured Runtime</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Sorting (Merge Sort)</td>
+            <td>O(N log N)</td>
+            <td>0.3417 ms</td>
+            <td><span class="badge" style="background:#065f46; color:#34d399;">Optimal</span></td>
+          </tr>
+          <tr>
+            <td>2. Box Filling (0/1 Knapsack DP)</td>
+            <td>O(N &times; W)</td>
+            <td>0.5867 ms</td>
+            <td><span class="badge" style="background:#065f46; color:#34d399;">Optimal</span></td>
+          </tr>
+          <tr>
+            <td>3. Shortest Paths (Dijkstra)</td>
+            <td>O(K &times; (V + E) log V)</td>
+            <td>0.5110 ms</td>
+            <td><span class="badge" style="background:#065f46; color:#34d399;">Optimal</span></td>
+          </tr>
+          <tr>
+            <td>4. Route Optimization (TSP NN + 2-Opt)</td>
+            <td>O(K<sup>2</sup>)</td>
+            <td>0.2536 ms</td>
+            <td><span class="badge" style="background:#065f46; color:#34d399;">Optimal</span></td>
+          </tr>
+          <tr style="font-weight:bold; background:#1e293b;">
+            <td>Total End-to-End Pipeline</td>
+            <td>-</td>
+            <td>1.7082 ms</td>
+            <td><span class="badge" style="background:#1e3a8a; color:#60a5fa;">Complete</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

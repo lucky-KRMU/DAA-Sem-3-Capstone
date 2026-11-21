@@ -1,0 +1,6 @@
+# Courier Logistics Optimization System
+# The core engine runs out-of-the-box on Python 3.8+ using pure Standard Library.
+#
+# Optional visualization & analysis packages (purely optional):
+# matplotlib>=3.5.0
+# pandas>=1.3.0

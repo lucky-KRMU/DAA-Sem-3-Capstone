@@ -1,0 +1,1443 @@
+{
+  "metadata": {
+    "dataset_name": "medium_dataset",
+    "num_parcels": 100,
+    "num_nodes": 25,
+    "recommended_capacity": 120,
+    "seed": 101
+  },
+  "graph": {
+    "num_nodes": 25,
+    "nodes": [
+      {
+        "node_id": 0,
+        "name": "Central Depot",
+        "x": 25.0,
+        "y": 25.0,
+        "is_depot": true
+      },
+      {
+        "node_id": 1,
+        "name": "Delivery Hub/Customer Zone 1",
+        "x": 28.73,
+        "y": 10.96,
+        "is_depot": false
+      },
+      {
+        "node_id": 2,
+        "name": "Delivery Hub/Customer Zone 2",
+        "x": 46.4,
+        "y": 44.5,
+        "is_depot": false
+      },
+      {
+        "node_id": 3,
+        "name": "Delivery Hub/Customer Zone 3",
+        "x": 23.49,
+        "y": 32.52,
+        "is_depot": false
+      },
+      {
+        "node_id": 4,
+        "name": "Delivery Hub/Customer Zone 4",
+        "x": 11.87,
+        "y": 12.2,
+        "is_depot": false
+      },
+      {
+        "node_id": 5,
+        "name": "Delivery Hub/Customer Zone 5",
+        "x": 15.27,
+        "y": 33.85,
+        "is_depot": false
+      },
+      {
+        "node_id": 6,
+        "name": "Delivery Hub/Customer Zone 6",
+        "x": 11.77,
+        "y": 46.67,
+        "is_depot": false
+      },
+      {
+        "node_id": 7,
+        "name": "Delivery Hub/Customer Zone 7",
+        "x": 5.24,
+        "y": 10.89,
+        "is_depot": false
+      },
+      {
+        "node_id": 8,
+        "name": "Delivery Hub/Customer Zone 8",
+        "x": 6.09,
+        "y": 37.42,
+        "is_depot": false
+      },
+      {
+        "node_id": 9,
+        "name": "Delivery Hub/Customer Zone 9",
+        "x": 18.86,
+        "y": 23.7,
+        "is_depot": false
+      },
+      {
+        "node_id": 10,
+        "name": "Delivery Hub/Customer Zone 10",
+        "x": 17.0,
+        "y": 31.32,
+        "is_depot": false
+      },
+      {
+        "node_id": 11,
+        "name": "Delivery Hub/Customer Zone 11",
+        "x": 20.58,
+        "y": 11.58,
+        "is_depot": false
+      },
+      {
+        "node_id": 12,
+        "name": "Delivery Hub/Customer Zone 12",
+        "x": 21.79,
+        "y": 16.0,
+        "is_depot": false
+      },
+      {
+        "node_id": 13,
+        "name": "Delivery Hub/Customer Zone 13",
+        "x": 7.1,
+        "y": 39.88,
+        "is_depot": false
+      },
+      {
+        "node_id": 14,
+        "name": "Delivery Hub/Customer Zone 14",
+        "x": 33.29,
+        "y": 32.58,
+        "is_depot": false
+      },
+      {
+        "node_id": 15,
+        "name": "Delivery Hub/Customer Zone 15",
+        "x": 42.59,
+        "y": 20.15,
+        "is_depot": false
+      },
+      {
+        "node_id": 16,
+        "name": "Delivery Hub/Customer Zone 16",
+        "x": 19.45,
+        "y": 21.46,
+        "is_depot": false
+      },
+      {
+        "node_id": 17,
+        "name": "Delivery Hub/Customer Zone 17",
+        "x": 20.61,
+        "y": 32.77,
+        "is_depot": false
+      },
+      {
+        "node_id": 18,
+        "name": "Delivery Hub/Customer Zone 18",
+        "x": 2.3,
+        "y": 23.35,
+        "is_depot": false
+      },
+      {
+        "node_id": 19,
+        "name": "Delivery Hub/Customer Zone 19",
+        "x": 26.61,
+        "y": 17.89,
+        "is_depot": false
+      },
+      {
+        "node_id": 20,
+        "name": "Delivery Hub/Customer Zone 20",
+        "x": 3.01,
+        "y": 34.41,
+        "is_depot": false
+      },
+      {
+        "node_id": 21,
+        "name": "Delivery Hub/Customer Zone 21",
+        "x": 2.43,
+        "y": 27.96,
+        "is_depot": false
+      },
+      {
+        "node_id": 22,
+        "name": "Delivery Hub/Customer Zone 22",
+        "x": 9.05,
+        "y": 3.59,
+        "is_depot": false
+      },
+      {
+        "node_id": 23,
+        "name": "Delivery Hub/Customer Zone 23",
+        "x": 10.32,
+        "y": 5.02,
+        "is_depot": false
+      },
+      {
+        "node_id": 24,
+        "name": "Delivery Hub/Customer Zone 24",
+        "x": 8.93,
+        "y": 33.5,
+        "is_depot": false
+      }
+    ],
+    "edges": [
+      {
+        "u": 0,
+        "v": 9,
+        "weight": 7.5
+      },
+      {
+        "u": 0,
+        "v": 3,
+        "weight": 8.53
+      },
+      {
+        "u": 0,
+        "v": 12,
+        "weight": 12.32
+      },
+      {
+        "u": 0,
+        "v": 16,
+        "weight": 7.81
+      },
+      {
+        "u": 0,
+        "v": 24,
+        "weight": 20.36
+      },
+      {
+        "u": 1,
+        "v": 19,
+        "weight": 8.88
+      },
+      {
+        "u": 1,
+        "v": 9,
+        "weight": 20.7
+      },
+      {
+        "u": 1,
+        "v": 12,
+        "weight": 9.25
+      },
+      {
+        "u": 2,
+        "v": 14,
+        "weight": 19.24
+      },
+      {
+        "u": 3,
+        "v": 17,
+        "weight": 3.54
+      },
+      {
+        "u": 3,
+        "v": 14,
+        "weight": 11.84
+      },
+      {
+        "u": 3,
+        "v": 5,
+        "weight": 10.1
+      },
+      {
+        "u": 3,
+        "v": 8,
+        "weight": 21.84
+      },
+      {
+        "u": 3,
+        "v": 16,
+        "weight": 13.17
+      },
+      {
+        "u": 4,
+        "v": 11,
+        "weight": 9.38
+      },
+      {
+        "u": 4,
+        "v": 7,
+        "weight": 8.05
+      },
+      {
+        "u": 4,
+        "v": 23,
+        "weight": 8.85
+      },
+      {
+        "u": 4,
+        "v": 22,
+        "weight": 10.01
+      },
+      {
+        "u": 5,
+        "v": 10,
+        "weight": 3.64
+      },
+      {
+        "u": 5,
+        "v": 24,
+        "weight": 6.67
+      },
+      {
+        "u": 5,
+        "v": 6,
+        "weight": 14.45
+      },
+      {
+        "u": 5,
+        "v": 8,
+        "weight": 11.19
+      },
+      {
+        "u": 5,
+        "v": 20,
+        "weight": 14.56
+      },
+      {
+        "u": 6,
+        "v": 13,
+        "weight": 10.04
+      },
+      {
+        "u": 6,
+        "v": 17,
+        "weight": 19.09
+      },
+      {
+        "u": 7,
+        "v": 9,
+        "weight": 19.86
+      },
+      {
+        "u": 8,
+        "v": 24,
+        "weight": 5.16
+      },
+      {
+        "u": 8,
+        "v": 13,
+        "weight": 2.81
+      },
+      {
+        "u": 8,
+        "v": 20,
+        "weight": 4.82
+      },
+      {
+        "u": 8,
+        "v": 21,
+        "weight": 11.69
+      },
+      {
+        "u": 9,
+        "v": 16,
+        "weight": 2.6
+      },
+      {
+        "u": 9,
+        "v": 14,
+        "weight": 20.96
+      },
+      {
+        "u": 9,
+        "v": 18,
+        "weight": 20.26
+      },
+      {
+        "u": 10,
+        "v": 17,
+        "weight": 4.62
+      },
+      {
+        "u": 10,
+        "v": 16,
+        "weight": 12.48
+      },
+      {
+        "u": 10,
+        "v": 20,
+        "weight": 15.82
+      },
+      {
+        "u": 10,
+        "v": 24,
+        "weight": 9.26
+      },
+      {
+        "u": 11,
+        "v": 12,
+        "weight": 5.25
+      },
+      {
+        "u": 11,
+        "v": 16,
+        "weight": 10.83
+      },
+      {
+        "u": 12,
+        "v": 16,
+        "weight": 7.01
+      },
+      {
+        "u": 12,
+        "v": 19,
+        "weight": 5.95
+      },
+      {
+        "u": 12,
+        "v": 23,
+        "weight": 17.42
+      },
+      {
+        "u": 13,
+        "v": 24,
+        "weight": 7.95
+      },
+      {
+        "u": 14,
+        "v": 15,
+        "weight": 16.74
+      },
+      {
+        "u": 16,
+        "v": 19,
+        "weight": 8.62
+      },
+      {
+        "u": 16,
+        "v": 21,
+        "weight": 21.91
+      },
+      {
+        "u": 17,
+        "v": 24,
+        "weight": 12.46
+      },
+      {
+        "u": 18,
+        "v": 21,
+        "weight": 5.65
+      },
+      {
+        "u": 20,
+        "v": 21,
+        "weight": 8.03
+      },
+      {
+        "u": 22,
+        "v": 23,
+        "weight": 2.32
+      }
+    ]
+  },
+  "parcels": [
+    {
+      "parcel_id": "PKG-0001",
+      "customer_id": "CUST-0201",
+      "destination_node": 20,
+      "weight": 6,
+      "deadline_min": 223,
+      "priority": 1,
+      "value": 36,
+      "description": "Tier-1 Delivery to Node 20"
+    },
+    {
+      "parcel_id": "PKG-0002",
+      "customer_id": "CUST-0202",
+      "destination_node": 20,
+      "weight": 7,
+      "deadline_min": 324,
+      "priority": 1,
+      "value": 22,
+      "description": "Tier-1 Delivery to Node 20"
+    },
+    {
+      "parcel_id": "PKG-0003",
+      "customer_id": "CUST-0183",
+      "destination_node": 18,
+      "weight": 11,
+      "deadline_min": 215,
+      "priority": 2,
+      "value": 71,
+      "description": "Tier-2 Delivery to Node 18"
+    },
+    {
+      "parcel_id": "PKG-0004",
+      "customer_id": "CUST-0134",
+      "destination_node": 13,
+      "weight": 9,
+      "deadline_min": 149,
+      "priority": 2,
+      "value": 82,
+      "description": "Tier-2 Delivery to Node 13"
+    },
+    {
+      "parcel_id": "PKG-0005",
+      "customer_id": "CUST-0025",
+      "destination_node": 2,
+      "weight": 3,
+      "deadline_min": 335,
+      "priority": 1,
+      "value": 35,
+      "description": "Tier-1 Delivery to Node 2"
+    },
+    {
+      "parcel_id": "PKG-0006",
+      "customer_id": "CUST-0086",
+      "destination_node": 8,
+      "weight": 3,
+      "deadline_min": 122,
+      "priority": 3,
+      "value": 146,
+      "description": "Tier-3 Delivery to Node 8"
+    },
+    {
+      "parcel_id": "PKG-0007",
+      "customer_id": "CUST-0220",
+      "destination_node": 22,
+      "weight": 3,
+      "deadline_min": 151,
+      "priority": 2,
+      "value": 80,
+      "description": "Tier-2 Delivery to Node 22"
+    },
+    {
+      "parcel_id": "PKG-0008",
+      "customer_id": "CUST-0131",
+      "destination_node": 13,
+      "weight": 4,
+      "deadline_min": 125,
+      "priority": 3,
+      "value": 146,
+      "description": "Tier-3 Delivery to Node 13"
+    },
+    {
+      "parcel_id": "PKG-0009",
+      "customer_id": "CUST-0142",
+      "destination_node": 14,
+      "weight": 8,
+      "deadline_min": 137,
+      "priority": 2,
+      "value": 87,
+      "description": "Tier-2 Delivery to Node 14"
+    },
+    {
+      "parcel_id": "PKG-0010",
+      "customer_id": "CUST-0033",
+      "destination_node": 3,
+      "weight": 10,
+      "deadline_min": 240,
+      "priority": 1,
+      "value": 40,
+      "description": "Tier-1 Delivery to Node 3"
+    },
+    {
+      "parcel_id": "PKG-0011",
+      "customer_id": "CUST-0184",
+      "destination_node": 18,
+      "weight": 11,
+      "deadline_min": 176,
+      "priority": 2,
+      "value": 82,
+      "description": "Tier-2 Delivery to Node 18"
+    },
+    {
+      "parcel_id": "PKG-0012",
+      "customer_id": "CUST-0215",
+      "destination_node": 21,
+      "weight": 8,
+      "deadline_min": 141,
+      "priority": 3,
+      "value": 141,
+      "description": "Tier-3 Delivery to Node 21"
+    },
+    {
+      "parcel_id": "PKG-0013",
+      "customer_id": "CUST-0176",
+      "destination_node": 17,
+      "weight": 4,
+      "deadline_min": 110,
+      "priority": 3,
+      "value": 146,
+      "description": "Tier-3 Delivery to Node 17"
+    },
+    {
+      "parcel_id": "PKG-0014",
+      "customer_id": "CUST-0200",
+      "destination_node": 20,
+      "weight": 11,
+      "deadline_min": 237,
+      "priority": 2,
+      "value": 67,
+      "description": "Tier-2 Delivery to Node 20"
+    },
+    {
+      "parcel_id": "PKG-0015",
+      "customer_id": "CUST-0121",
+      "destination_node": 12,
+      "weight": 10,
+      "deadline_min": 126,
+      "priority": 2,
+      "value": 94,
+      "description": "Tier-2 Delivery to Node 12"
+    },
+    {
+      "parcel_id": "PKG-0016",
+      "customer_id": "CUST-0162",
+      "destination_node": 16,
+      "weight": 3,
+      "deadline_min": 258,
+      "priority": 1,
+      "value": 31,
+      "description": "Tier-1 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0017",
+      "customer_id": "CUST-0173",
+      "destination_node": 17,
+      "weight": 7,
+      "deadline_min": 92,
+      "priority": 3,
+      "value": 158,
+      "description": "Tier-3 Delivery to Node 17"
+    },
+    {
+      "parcel_id": "PKG-0018",
+      "customer_id": "CUST-0064",
+      "destination_node": 6,
+      "weight": 5,
+      "deadline_min": 160,
+      "priority": 2,
+      "value": 92,
+      "description": "Tier-2 Delivery to Node 6"
+    },
+    {
+      "parcel_id": "PKG-0019",
+      "customer_id": "CUST-0065",
+      "destination_node": 6,
+      "weight": 4,
+      "deadline_min": 312,
+      "priority": 1,
+      "value": 36,
+      "description": "Tier-1 Delivery to Node 6"
+    },
+    {
+      "parcel_id": "PKG-0020",
+      "customer_id": "CUST-0206",
+      "destination_node": 20,
+      "weight": 8,
+      "deadline_min": 316,
+      "priority": 1,
+      "value": 30,
+      "description": "Tier-1 Delivery to Node 20"
+    },
+    {
+      "parcel_id": "PKG-0021",
+      "customer_id": "CUST-0080",
+      "destination_node": 8,
+      "weight": 7,
+      "deadline_min": 250,
+      "priority": 1,
+      "value": 33,
+      "description": "Tier-1 Delivery to Node 8"
+    },
+    {
+      "parcel_id": "PKG-0022",
+      "customer_id": "CUST-0051",
+      "destination_node": 5,
+      "weight": 1,
+      "deadline_min": 286,
+      "priority": 1,
+      "value": 33,
+      "description": "Tier-1 Delivery to Node 5"
+    },
+    {
+      "parcel_id": "PKG-0023",
+      "customer_id": "CUST-0242",
+      "destination_node": 24,
+      "weight": 8,
+      "deadline_min": 286,
+      "priority": 1,
+      "value": 32,
+      "description": "Tier-1 Delivery to Node 24"
+    },
+    {
+      "parcel_id": "PKG-0024",
+      "customer_id": "CUST-0223",
+      "destination_node": 22,
+      "weight": 6,
+      "deadline_min": 226,
+      "priority": 2,
+      "value": 68,
+      "description": "Tier-2 Delivery to Node 22"
+    },
+    {
+      "parcel_id": "PKG-0025",
+      "customer_id": "CUST-0074",
+      "destination_node": 7,
+      "weight": 8,
+      "deadline_min": 326,
+      "priority": 1,
+      "value": 27,
+      "description": "Tier-1 Delivery to Node 7"
+    },
+    {
+      "parcel_id": "PKG-0026",
+      "customer_id": "CUST-0085",
+      "destination_node": 8,
+      "weight": 6,
+      "deadline_min": 131,
+      "priority": 2,
+      "value": 87,
+      "description": "Tier-2 Delivery to Node 8"
+    },
+    {
+      "parcel_id": "PKG-0027",
+      "customer_id": "CUST-0236",
+      "destination_node": 23,
+      "weight": 7,
+      "deadline_min": 145,
+      "priority": 3,
+      "value": 142,
+      "description": "Tier-3 Delivery to Node 23"
+    },
+    {
+      "parcel_id": "PKG-0028",
+      "customer_id": "CUST-0090",
+      "destination_node": 9,
+      "weight": 5,
+      "deadline_min": 284,
+      "priority": 1,
+      "value": 32,
+      "description": "Tier-1 Delivery to Node 9"
+    },
+    {
+      "parcel_id": "PKG-0029",
+      "customer_id": "CUST-0141",
+      "destination_node": 14,
+      "weight": 4,
+      "deadline_min": 360,
+      "priority": 1,
+      "value": 24,
+      "description": "Tier-1 Delivery to Node 14"
+    },
+    {
+      "parcel_id": "PKG-0030",
+      "customer_id": "CUST-0212",
+      "destination_node": 21,
+      "weight": 1,
+      "deadline_min": 60,
+      "priority": 4,
+      "value": 244,
+      "description": "Tier-4 Delivery to Node 21"
+    },
+    {
+      "parcel_id": "PKG-0031",
+      "customer_id": "CUST-0093",
+      "destination_node": 9,
+      "weight": 3,
+      "deadline_min": 83,
+      "priority": 3,
+      "value": 146,
+      "description": "Tier-3 Delivery to Node 9"
+    },
+    {
+      "parcel_id": "PKG-0032",
+      "customer_id": "CUST-0224",
+      "destination_node": 22,
+      "weight": 4,
+      "deadline_min": 137,
+      "priority": 2,
+      "value": 96,
+      "description": "Tier-2 Delivery to Node 22"
+    },
+    {
+      "parcel_id": "PKG-0033",
+      "customer_id": "CUST-0135",
+      "destination_node": 13,
+      "weight": 9,
+      "deadline_min": 214,
+      "priority": 2,
+      "value": 68,
+      "description": "Tier-2 Delivery to Node 13"
+    },
+    {
+      "parcel_id": "PKG-0034",
+      "customer_id": "CUST-0116",
+      "destination_node": 11,
+      "weight": 5,
+      "deadline_min": 38,
+      "priority": 4,
+      "value": 263,
+      "description": "Tier-4 Delivery to Node 11"
+    },
+    {
+      "parcel_id": "PKG-0035",
+      "customer_id": "CUST-0150",
+      "destination_node": 15,
+      "weight": 4,
+      "deadline_min": 77,
+      "priority": 3,
+      "value": 151,
+      "description": "Tier-3 Delivery to Node 15"
+    },
+    {
+      "parcel_id": "PKG-0036",
+      "customer_id": "CUST-0091",
+      "destination_node": 9,
+      "weight": 9,
+      "deadline_min": 218,
+      "priority": 1,
+      "value": 48,
+      "description": "Tier-1 Delivery to Node 9"
+    },
+    {
+      "parcel_id": "PKG-0037",
+      "customer_id": "CUST-0072",
+      "destination_node": 7,
+      "weight": 1,
+      "deadline_min": 35,
+      "priority": 4,
+      "value": 255,
+      "description": "Tier-4 Delivery to Node 7"
+    },
+    {
+      "parcel_id": "PKG-0038",
+      "customer_id": "CUST-0013",
+      "destination_node": 1,
+      "weight": 3,
+      "deadline_min": 62,
+      "priority": 4,
+      "value": 248,
+      "description": "Tier-4 Delivery to Node 1"
+    },
+    {
+      "parcel_id": "PKG-0039",
+      "customer_id": "CUST-0204",
+      "destination_node": 20,
+      "weight": 4,
+      "deadline_min": 180,
+      "priority": 2,
+      "value": 82,
+      "description": "Tier-2 Delivery to Node 20"
+    },
+    {
+      "parcel_id": "PKG-0040",
+      "customer_id": "CUST-0235",
+      "destination_node": 23,
+      "weight": 3,
+      "deadline_min": 246,
+      "priority": 1,
+      "value": 31,
+      "description": "Tier-1 Delivery to Node 23"
+    },
+    {
+      "parcel_id": "PKG-0041",
+      "customer_id": "CUST-0236",
+      "destination_node": 23,
+      "weight": 2,
+      "deadline_min": 75,
+      "priority": 3,
+      "value": 157,
+      "description": "Tier-3 Delivery to Node 23"
+    },
+    {
+      "parcel_id": "PKG-0042",
+      "customer_id": "CUST-0030",
+      "destination_node": 3,
+      "weight": 3,
+      "deadline_min": 110,
+      "priority": 3,
+      "value": 146,
+      "description": "Tier-3 Delivery to Node 3"
+    },
+    {
+      "parcel_id": "PKG-0043",
+      "customer_id": "CUST-0141",
+      "destination_node": 14,
+      "weight": 4,
+      "deadline_min": 221,
+      "priority": 2,
+      "value": 72,
+      "description": "Tier-2 Delivery to Node 14"
+    },
+    {
+      "parcel_id": "PKG-0044",
+      "customer_id": "CUST-0092",
+      "destination_node": 9,
+      "weight": 6,
+      "deadline_min": 93,
+      "priority": 3,
+      "value": 159,
+      "description": "Tier-3 Delivery to Node 9"
+    },
+    {
+      "parcel_id": "PKG-0045",
+      "customer_id": "CUST-0163",
+      "destination_node": 16,
+      "weight": 4,
+      "deadline_min": 280,
+      "priority": 1,
+      "value": 30,
+      "description": "Tier-1 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0046",
+      "customer_id": "CUST-0224",
+      "destination_node": 22,
+      "weight": 6,
+      "deadline_min": 268,
+      "priority": 1,
+      "value": 42,
+      "description": "Tier-1 Delivery to Node 22"
+    },
+    {
+      "parcel_id": "PKG-0047",
+      "customer_id": "CUST-0245",
+      "destination_node": 24,
+      "weight": 3,
+      "deadline_min": 196,
+      "priority": 2,
+      "value": 71,
+      "description": "Tier-2 Delivery to Node 24"
+    },
+    {
+      "parcel_id": "PKG-0048",
+      "customer_id": "CUST-0156",
+      "destination_node": 15,
+      "weight": 4,
+      "deadline_min": 62,
+      "priority": 3,
+      "value": 165,
+      "description": "Tier-3 Delivery to Node 15"
+    },
+    {
+      "parcel_id": "PKG-0049",
+      "customer_id": "CUST-0040",
+      "destination_node": 4,
+      "weight": 5,
+      "deadline_min": 315,
+      "priority": 1,
+      "value": 23,
+      "description": "Tier-1 Delivery to Node 4"
+    },
+    {
+      "parcel_id": "PKG-0050",
+      "customer_id": "CUST-0161",
+      "destination_node": 16,
+      "weight": 7,
+      "deadline_min": 195,
+      "priority": 1,
+      "value": 49,
+      "description": "Tier-1 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0051",
+      "customer_id": "CUST-0242",
+      "destination_node": 24,
+      "weight": 7,
+      "deadline_min": 343,
+      "priority": 1,
+      "value": 26,
+      "description": "Tier-1 Delivery to Node 24"
+    },
+    {
+      "parcel_id": "PKG-0052",
+      "customer_id": "CUST-0063",
+      "destination_node": 6,
+      "weight": 5,
+      "deadline_min": 356,
+      "priority": 1,
+      "value": 25,
+      "description": "Tier-1 Delivery to Node 6"
+    },
+    {
+      "parcel_id": "PKG-0053",
+      "customer_id": "CUST-0214",
+      "destination_node": 21,
+      "weight": 4,
+      "deadline_min": 96,
+      "priority": 3,
+      "value": 147,
+      "description": "Tier-3 Delivery to Node 21"
+    },
+    {
+      "parcel_id": "PKG-0054",
+      "customer_id": "CUST-0185",
+      "destination_node": 18,
+      "weight": 5,
+      "deadline_min": 254,
+      "priority": 1,
+      "value": 35,
+      "description": "Tier-1 Delivery to Node 18"
+    },
+    {
+      "parcel_id": "PKG-0055",
+      "customer_id": "CUST-0016",
+      "destination_node": 1,
+      "weight": 3,
+      "deadline_min": 319,
+      "priority": 1,
+      "value": 30,
+      "description": "Tier-1 Delivery to Node 1"
+    },
+    {
+      "parcel_id": "PKG-0056",
+      "customer_id": "CUST-0200",
+      "destination_node": 20,
+      "weight": 5,
+      "deadline_min": 356,
+      "priority": 1,
+      "value": 19,
+      "description": "Tier-1 Delivery to Node 20"
+    },
+    {
+      "parcel_id": "PKG-0057",
+      "customer_id": "CUST-0151",
+      "destination_node": 15,
+      "weight": 5,
+      "deadline_min": 88,
+      "priority": 4,
+      "value": 237,
+      "description": "Tier-4 Delivery to Node 15"
+    },
+    {
+      "parcel_id": "PKG-0058",
+      "customer_id": "CUST-0082",
+      "destination_node": 8,
+      "weight": 11,
+      "deadline_min": 194,
+      "priority": 2,
+      "value": 75,
+      "description": "Tier-2 Delivery to Node 8"
+    },
+    {
+      "parcel_id": "PKG-0059",
+      "customer_id": "CUST-0163",
+      "destination_node": 16,
+      "weight": 10,
+      "deadline_min": 121,
+      "priority": 2,
+      "value": 82,
+      "description": "Tier-2 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0060",
+      "customer_id": "CUST-0104",
+      "destination_node": 10,
+      "weight": 10,
+      "deadline_min": 128,
+      "priority": 2,
+      "value": 89,
+      "description": "Tier-2 Delivery to Node 10"
+    },
+    {
+      "parcel_id": "PKG-0061",
+      "customer_id": "CUST-0045",
+      "destination_node": 4,
+      "weight": 7,
+      "deadline_min": 353,
+      "priority": 1,
+      "value": 21,
+      "description": "Tier-1 Delivery to Node 4"
+    },
+    {
+      "parcel_id": "PKG-0062",
+      "customer_id": "CUST-0246",
+      "destination_node": 24,
+      "weight": 3,
+      "deadline_min": 183,
+      "priority": 2,
+      "value": 85,
+      "description": "Tier-2 Delivery to Node 24"
+    },
+    {
+      "parcel_id": "PKG-0063",
+      "customer_id": "CUST-0010",
+      "destination_node": 1,
+      "weight": 2,
+      "deadline_min": 255,
+      "priority": 1,
+      "value": 29,
+      "description": "Tier-1 Delivery to Node 1"
+    },
+    {
+      "parcel_id": "PKG-0064",
+      "customer_id": "CUST-0161",
+      "destination_node": 16,
+      "weight": 9,
+      "deadline_min": 340,
+      "priority": 1,
+      "value": 22,
+      "description": "Tier-1 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0065",
+      "customer_id": "CUST-0072",
+      "destination_node": 7,
+      "weight": 5,
+      "deadline_min": 169,
+      "priority": 2,
+      "value": 81,
+      "description": "Tier-2 Delivery to Node 7"
+    },
+    {
+      "parcel_id": "PKG-0066",
+      "customer_id": "CUST-0113",
+      "destination_node": 11,
+      "weight": 5,
+      "deadline_min": 84,
+      "priority": 4,
+      "value": 229,
+      "description": "Tier-4 Delivery to Node 11"
+    },
+    {
+      "parcel_id": "PKG-0067",
+      "customer_id": "CUST-0034",
+      "destination_node": 3,
+      "weight": 10,
+      "deadline_min": 187,
+      "priority": 2,
+      "value": 79,
+      "description": "Tier-2 Delivery to Node 3"
+    },
+    {
+      "parcel_id": "PKG-0068",
+      "customer_id": "CUST-0235",
+      "destination_node": 23,
+      "weight": 1,
+      "deadline_min": 123,
+      "priority": 3,
+      "value": 145,
+      "description": "Tier-3 Delivery to Node 23"
+    },
+    {
+      "parcel_id": "PKG-0069",
+      "customer_id": "CUST-0026",
+      "destination_node": 2,
+      "weight": 1,
+      "deadline_min": 302,
+      "priority": 1,
+      "value": 34,
+      "description": "Tier-1 Delivery to Node 2"
+    },
+    {
+      "parcel_id": "PKG-0070",
+      "customer_id": "CUST-0180",
+      "destination_node": 18,
+      "weight": 6,
+      "deadline_min": 94,
+      "priority": 3,
+      "value": 154,
+      "description": "Tier-3 Delivery to Node 18"
+    },
+    {
+      "parcel_id": "PKG-0071",
+      "customer_id": "CUST-0041",
+      "destination_node": 4,
+      "weight": 5,
+      "deadline_min": 154,
+      "priority": 2,
+      "value": 89,
+      "description": "Tier-2 Delivery to Node 4"
+    },
+    {
+      "parcel_id": "PKG-0072",
+      "customer_id": "CUST-0122",
+      "destination_node": 12,
+      "weight": 3,
+      "deadline_min": 279,
+      "priority": 1,
+      "value": 29,
+      "description": "Tier-1 Delivery to Node 12"
+    },
+    {
+      "parcel_id": "PKG-0073",
+      "customer_id": "CUST-0213",
+      "destination_node": 21,
+      "weight": 6,
+      "deadline_min": 226,
+      "priority": 1,
+      "value": 38,
+      "description": "Tier-1 Delivery to Node 21"
+    },
+    {
+      "parcel_id": "PKG-0074",
+      "customer_id": "CUST-0124",
+      "destination_node": 12,
+      "weight": 4,
+      "deadline_min": 156,
+      "priority": 2,
+      "value": 89,
+      "description": "Tier-2 Delivery to Node 12"
+    },
+    {
+      "parcel_id": "PKG-0075",
+      "customer_id": "CUST-0135",
+      "destination_node": 13,
+      "weight": 9,
+      "deadline_min": 162,
+      "priority": 2,
+      "value": 78,
+      "description": "Tier-2 Delivery to Node 13"
+    },
+    {
+      "parcel_id": "PKG-0076",
+      "customer_id": "CUST-0016",
+      "destination_node": 1,
+      "weight": 7,
+      "deadline_min": 220,
+      "priority": 2,
+      "value": 77,
+      "description": "Tier-2 Delivery to Node 1"
+    },
+    {
+      "parcel_id": "PKG-0077",
+      "customer_id": "CUST-0040",
+      "destination_node": 4,
+      "weight": 10,
+      "deadline_min": 230,
+      "priority": 1,
+      "value": 38,
+      "description": "Tier-1 Delivery to Node 4"
+    },
+    {
+      "parcel_id": "PKG-0078",
+      "customer_id": "CUST-0011",
+      "destination_node": 1,
+      "weight": 7,
+      "deadline_min": 118,
+      "priority": 3,
+      "value": 143,
+      "description": "Tier-3 Delivery to Node 1"
+    },
+    {
+      "parcel_id": "PKG-0079",
+      "customer_id": "CUST-0062",
+      "destination_node": 6,
+      "weight": 3,
+      "deadline_min": 198,
+      "priority": 2,
+      "value": 74,
+      "description": "Tier-2 Delivery to Node 6"
+    },
+    {
+      "parcel_id": "PKG-0080",
+      "customer_id": "CUST-0123",
+      "destination_node": 12,
+      "weight": 9,
+      "deadline_min": 122,
+      "priority": 2,
+      "value": 87,
+      "description": "Tier-2 Delivery to Node 12"
+    },
+    {
+      "parcel_id": "PKG-0081",
+      "customer_id": "CUST-0224",
+      "destination_node": 22,
+      "weight": 3,
+      "deadline_min": 286,
+      "priority": 1,
+      "value": 31,
+      "description": "Tier-1 Delivery to Node 22"
+    },
+    {
+      "parcel_id": "PKG-0082",
+      "customer_id": "CUST-0235",
+      "destination_node": 23,
+      "weight": 4,
+      "deadline_min": 178,
+      "priority": 2,
+      "value": 84,
+      "description": "Tier-2 Delivery to Node 23"
+    },
+    {
+      "parcel_id": "PKG-0083",
+      "customer_id": "CUST-0176",
+      "destination_node": 17,
+      "weight": 6,
+      "deadline_min": 302,
+      "priority": 1,
+      "value": 27,
+      "description": "Tier-1 Delivery to Node 17"
+    },
+    {
+      "parcel_id": "PKG-0084",
+      "customer_id": "CUST-0030",
+      "destination_node": 3,
+      "weight": 2,
+      "deadline_min": 193,
+      "priority": 1,
+      "value": 45,
+      "description": "Tier-1 Delivery to Node 3"
+    },
+    {
+      "parcel_id": "PKG-0085",
+      "customer_id": "CUST-0191",
+      "destination_node": 19,
+      "weight": 8,
+      "deadline_min": 158,
+      "priority": 2,
+      "value": 81,
+      "description": "Tier-2 Delivery to Node 19"
+    },
+    {
+      "parcel_id": "PKG-0086",
+      "customer_id": "CUST-0172",
+      "destination_node": 17,
+      "weight": 11,
+      "deadline_min": 142,
+      "priority": 2,
+      "value": 85,
+      "description": "Tier-2 Delivery to Node 17"
+    },
+    {
+      "parcel_id": "PKG-0087",
+      "customer_id": "CUST-0113",
+      "destination_node": 11,
+      "weight": 5,
+      "deadline_min": 89,
+      "priority": 3,
+      "value": 159,
+      "description": "Tier-3 Delivery to Node 11"
+    },
+    {
+      "parcel_id": "PKG-0088",
+      "customer_id": "CUST-0224",
+      "destination_node": 22,
+      "weight": 4,
+      "deadline_min": 146,
+      "priority": 2,
+      "value": 87,
+      "description": "Tier-2 Delivery to Node 22"
+    },
+    {
+      "parcel_id": "PKG-0089",
+      "customer_id": "CUST-0035",
+      "destination_node": 3,
+      "weight": 8,
+      "deadline_min": 171,
+      "priority": 2,
+      "value": 85,
+      "description": "Tier-2 Delivery to Node 3"
+    },
+    {
+      "parcel_id": "PKG-0090",
+      "customer_id": "CUST-0216",
+      "destination_node": 21,
+      "weight": 5,
+      "deadline_min": 324,
+      "priority": 1,
+      "value": 29,
+      "description": "Tier-1 Delivery to Node 21"
+    },
+    {
+      "parcel_id": "PKG-0091",
+      "customer_id": "CUST-0160",
+      "destination_node": 16,
+      "weight": 4,
+      "deadline_min": 126,
+      "priority": 3,
+      "value": 146,
+      "description": "Tier-3 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0092",
+      "customer_id": "CUST-0131",
+      "destination_node": 13,
+      "weight": 3,
+      "deadline_min": 123,
+      "priority": 2,
+      "value": 95,
+      "description": "Tier-2 Delivery to Node 13"
+    },
+    {
+      "parcel_id": "PKG-0093",
+      "customer_id": "CUST-0162",
+      "destination_node": 16,
+      "weight": 5,
+      "deadline_min": 83,
+      "priority": 4,
+      "value": 225,
+      "description": "Tier-4 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0094",
+      "customer_id": "CUST-0073",
+      "destination_node": 7,
+      "weight": 4,
+      "deadline_min": 319,
+      "priority": 1,
+      "value": 28,
+      "description": "Tier-1 Delivery to Node 7"
+    },
+    {
+      "parcel_id": "PKG-0095",
+      "customer_id": "CUST-0194",
+      "destination_node": 19,
+      "weight": 3,
+      "deadline_min": 107,
+      "priority": 3,
+      "value": 142,
+      "description": "Tier-3 Delivery to Node 19"
+    },
+    {
+      "parcel_id": "PKG-0096",
+      "customer_id": "CUST-0165",
+      "destination_node": 16,
+      "weight": 11,
+      "deadline_min": 235,
+      "priority": 2,
+      "value": 76,
+      "description": "Tier-2 Delivery to Node 16"
+    },
+    {
+      "parcel_id": "PKG-0097",
+      "customer_id": "CUST-0046",
+      "destination_node": 4,
+      "weight": 1,
+      "deadline_min": 94,
+      "priority": 3,
+      "value": 158,
+      "description": "Tier-3 Delivery to Node 4"
+    },
+    {
+      "parcel_id": "PKG-0098",
+      "customer_id": "CUST-0040",
+      "destination_node": 4,
+      "weight": 8,
+      "deadline_min": 286,
+      "priority": 1,
+      "value": 39,
+      "description": "Tier-1 Delivery to Node 4"
+    },
+    {
+      "parcel_id": "PKG-0099",
+      "customer_id": "CUST-0031",
+      "destination_node": 3,
+      "weight": 5,
+      "deadline_min": 121,
+      "priority": 3,
+      "value": 143,
+      "description": "Tier-3 Delivery to Node 3"
+    },
+    {
+      "parcel_id": "PKG-0100",
+      "customer_id": "CUST-0072",
+      "destination_node": 7,
+      "weight": 5,
+      "deadline_min": 188,
+      "priority": 2,
+      "value": 85,
+      "description": "Tier-2 Delivery to Node 7"
+    }
+  ]
+}
