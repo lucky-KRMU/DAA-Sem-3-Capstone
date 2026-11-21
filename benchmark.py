@@ -7,7 +7,7 @@ Generates SVG charts, HTML interactive dashboard, and output traces for the fina
 import os
 import sys
 import time
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 
 from src.dataset_generator import load_dataset_json
 from src.pipeline import CourierOptimizationPipeline

@@ -6,7 +6,7 @@ and an exact Brute Force solver for small benchmark instances.
 
 import itertools
 import time
-from typing import List, Dict, Tuple, Set
+from typing import List, Dict, Tuple, Set, Any
 
 
 def tour_length(tour: List[int], dist_matrix: Dict[Tuple[int, int], float]) -> float:
