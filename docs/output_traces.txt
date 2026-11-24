@@ -26,7 +26,7 @@ PPKG-0006 (8kg, 45 |     0 |     0 |   134 |   153 |   153 |   287 |   287 |   2
 ... (5 more parcel rows truncated) ...
 
 --- PHASE 3: TSP EXACT VS APPROXIMATION BENCHMARK ---
-Exact Brute Force TSP Tour: [0, 1, 5, 7, 6, 0] | Distance: 136.24 km | Runtime: 0.016 ms
+Exact Brute Force TSP Tour: [0, 1, 5, 7, 6, 0] | Distance: 136.24 km | Runtime: 0.014 ms
 Nearest-Neighbor Tour:    [0, 6, 5, 1, 7, 0] | Distance: 136.24 km (Ratio: 1.000x) | Runtime: 0.003 ms
 2-Opt Refined Tour:        [0, 6, 5, 1, 7, 0] | Distance: 136.24 km (Ratio: 1.000x) | Runtime: 0.003 ms
 
@@ -36,7 +36,7 @@ SUMMARY RESULTS:
   * Total Value: 762 (Greedy Fractional Upper Bound: 777.75)
   * Route Sequence: 0 -> 6 -> 5 -> 1 -> 7 -> 0
   * Route Length: 136.24 km (2-Opt improvement: 0.0%)
-  * Runtimes: Sort=0.058ms | Knapsack=0.045ms | Dijkstra=0.035ms | TSP=0.013ms | Total=0.161ms
+  * Runtimes: Sort=0.047ms | Knapsack=0.037ms | Dijkstra=0.029ms | TSP=0.011ms | Total=0.133ms
 
 --------------------------------------------------------------------------------
 BENCHMARK RUN: MEDIUM DATASET (data/medium_dataset.json)
@@ -50,7 +50,7 @@ SUMMARY RESULTS:
   * Total Value: 5088 (Greedy Fractional Upper Bound: 5094.75)
   * Route Sequence: 0 -> 11 -> 4 -> 7 -> 22 -> 23 -> 12 -> 1 -> 19 -> 16 -> 9 -> 18 -> 21 -> 8 -> 13 -> 6 -> 24 -> 5 -> 17 -> 3 -> 15 -> 2 -> 0
   * Route Length: 293.23 km (2-Opt improvement: 9.28%)
-  * Runtimes: Sort=0.350ms | Knapsack=0.609ms | Dijkstra=0.552ms | TSP=0.244ms | Total=1.769ms
+  * Runtimes: Sort=0.292ms | Knapsack=0.490ms | Dijkstra=0.435ms | TSP=0.198ms | Total=1.426ms
 
 --------------------------------------------------------------------------------
 BENCHMARK RUN: LARGE DATASET (data/large_dataset.json)
@@ -64,7 +64,7 @@ SUMMARY RESULTS:
   * Total Value: 18157 (Greedy Fractional Upper Bound: 18157.0)
   * Route Sequence: 0 -> 42 -> 29 -> 22 -> 11 -> 43 -> 31 -> 16 -> 20 -> 38 -> 24 -> 21 -> 47 -> 49 -> 1 -> 15 -> 36 -> 7 -> 8 -> 13 -> 4 -> 33 -> 30 -> 23 -> 35 -> 46 -> 41 -> 19 -> 48 -> 40 -> 45 -> 14 -> 25 -> 2 -> 28 -> 9 -> 17 -> 12 -> 26 -> 6 -> 39 -> 44 -> 5 -> 37 -> 10 -> 27 -> 0
   * Route Length: 351.28 km (2-Opt improvement: 15.49%)
-  * Runtimes: Sort=2.186ms | Knapsack=9.183ms | Dijkstra=3.399ms | TSP=2.043ms | Total=16.832ms
+  * Runtimes: Sort=1.868ms | Knapsack=7.821ms | Dijkstra=3.171ms | TSP=1.796ms | Total=14.678ms
 
 --------------------------------------------------------------------------------
 BENCHMARK RUN: STRESS DATASET (data/stress_dataset.json)
@@ -78,11 +78,11 @@ SUMMARY RESULTS:
   * Total Value: 32315 (Greedy Fractional Upper Bound: 32315.0)
   * Route Sequence: 0 -> 63 -> 53 -> 47 -> 7 -> 78 -> 14 -> 58 -> 15 -> 76 -> 16 -> 21 -> 40 -> 20 -> 26 -> 10 -> 71 -> 27 -> 19 -> 18 -> 59 -> 24 -> 28 -> 37 -> 11 -> 31 -> 61 -> 6 -> 72 -> 12 -> 3 -> 79 -> 65 -> 70 -> 60 -> 38 -> 8 -> 43 -> 51 -> 44 -> 13 -> 73 -> 68 -> 67 -> 42 -> 34 -> 56 -> 46 -> 45 -> 4 -> 64 -> 49 -> 39 -> 25 -> 33 -> 50 -> 66 -> 35 -> 32 -> 54 -> 22 -> 36 -> 30 -> 1 -> 41 -> 55 -> 29 -> 2 -> 17 -> 57 -> 69 -> 77 -> 5 -> 62 -> 23 -> 52 -> 9 -> 48 -> 0
   * Route Length: 411.2 km (2-Opt improvement: 16.07%)
-  * Runtimes: Sort=4.130ms | Knapsack=28.091ms | Dijkstra=6.391ms | TSP=3.341ms | Total=42.972ms
+  * Runtimes: Sort=3.804ms | Knapsack=27.779ms | Dijkstra=6.422ms | TSP=3.408ms | Total=42.472ms
 
 --------------------------------------------------------------------------------
 PHASE 2: DETAILED SORTING ALGORITHM BENCHMARK (N=1000 PARCELS)
 --------------------------------------------------------------------------------
-  * timsort     : Runtime = 0.1496 ms | Correctness Verified = True
-  * merge_sort  : Runtime = 1.2348 ms | Correctness Verified = True
-  * quick_sort  : Runtime = 1.1060 ms | Correctness Verified = True
+  * timsort     : Runtime = 0.1465 ms | Correctness Verified = True
+  * merge_sort  : Runtime = 1.2488 ms | Correctness Verified = True
+  * quick_sort  : Runtime = 0.9919 ms | Correctness Verified = True
