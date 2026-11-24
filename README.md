@@ -23,6 +23,7 @@ This repository contains an end-to-end Python application that solves the last-m
 ├── Instructions.md             # Project requirements and rubric
 ├── README.md                   # Setup, execution guide, and system overview
 ├── CAPSTONE_REPORT.md          # Comprehensive final academic evaluation report
+├── Courier Logistics Capstone Project.pdf # Final submitted report with screenshots & execution traces
 ├── requirements.txt            # System dependencies (Standard library only; zero pip requirements)
 ├── main.py                     # Interactive CLI application
 ├── benchmark.py                # Automated benchmarking & chart generation script
